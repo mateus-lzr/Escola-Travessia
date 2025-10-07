@@ -1,0 +1,1141 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+    background-image: url('./fundo.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho_menu {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+.cabecalho_menu a {
+    color: #b37a22 ;
+    text-decoration: none;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.apresentacao_conteudo {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.apresentacao__conteudo__titulo {
+    margin-top: -100px;  
+    color: rgb(255, 255, 255);
+     font-size: 1.6rem;
+    font-family:"Fredoka", "Comic Sans MS", cursive;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 4% 50px;
+    border-radius: 50px;
+    background-color: #dfad64;
+    margin-bottom: 20px;
+    text-align: center;
+}  
+
+.apresentacao__conteudo__texto {
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+
+}
+
+.imagem_capa {
+    border-radius: 50px;
+    width: 400px;
+    height: auto;
+    margin-top: 39px;
+}
+.logo_escola {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+    margin-left: 50px;
+    margin-top: -140px;
+}
+
+.Rodape {
+    padding: 15px;
+    color: aliceblue;
+    background-color: #7d8c6e;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* capa responsiva  */
+/* tablets e telas medias */
+@media (max-width: 1024px) {
+    .apresentacao {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        padding: 8% 10%;
+    }
+
+    .imagem_capa {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .logo_escola {
+        width: 300px;
+        margin: 0 auto 20px auto;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 1.8rem;
+        padding: 20px;
+    }
+
+    .apresentacao__conteudo__texto {
+        font-size: 1.2rem;
+    }
+
+    .Rodape {
+        font-size: 1.2rem;
+    }
+}
+/* responsivo para celular  */
+@media (max-width: 768px) {
+    .apresentacao {
+        flex-direction: column;
+        padding: 10% 5%;
+        gap: 30px;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 1.5rem;
+        padding: 15px 25px;
+        border-radius: 30px;
+    }
+
+    .apresentacao__conteudo__texto {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .imagem_capa {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .logo_escola {
+        width: 80%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .Rodape {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+    .apresentacao__conteudo__titulo {
+        font-size: 1.3rem;
+        padding: 12px 20px;
+    }
+
+    .apresentacao__conteudo__texto {
+        font-size: 1rem;
+    }
+
+    .imagem_capa {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .Rodape {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+/* HISTORIAA */
+.apresentacao_historia {
+  padding: 80px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.historia_conteudo {
+  max-width: 1200px;
+}
+
+.historia_titulo_sobre {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #7d8c6e;
+  font-weight: 700;
+  position: relative;
+  font-family: 'Fredoka', sans-serif;;
+}
+
+.historia_titulo_sobre::after {
+  content: "";
+  width: 100px;
+  height: 4px;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 4px;
+}
+
+.historia_conteudo_sobre {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-family: 'Fredoka', sans-serif;;
+}
+
+.historia_foto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.historia_foto img {
+  width: 75%;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease;
+}
+
+.historia_foto img:hover {
+  transform: scale(1.03);
+}
+
+.historia_texto_sobre {
+  flex: 2;
+  font-size: 1.1rem;
+  background: #f3f7ec;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ===== MISSÃO / VISÃO / VALORES ===== */
+.apresentacao_mvv {
+  padding: 100px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  background: linear-gradient(135deg, #e8efe0, #f9f9f4);
+  flex-wrap: wrap;
+}
+
+.mvv_textos {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.bloco {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-left: 8px solid #a3c28d;
+  transition: transform 0.3s ease;
+}
+
+.bloco:hover {
+  transform: translateY(-5px);
+}
+
+.titulo {
+  font-size: 1.8rem;
+  color: #7d8c6e ;
+  margin-bottom: 10px;
+}
+
+.texto {
+  font-size: 1rem;
+  color: #444;
+  font-family: 'Fredoka', sans-serif;;
+}
+
+.mvv_fotos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.mvv_fotos img {
+  width: 70%;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* ===== RODAPÉ ===== */
+.rodape {
+  background-color: #2e312b;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 60px;
+  font-size: 0.95rem;
+  color: #b37a22;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 900px) {
+  .historia_conteudo_sobre {
+    flex-direction: column;
+  }
+
+  .apresentacao_mvv {
+    flex-direction: column;
+  }
+
+  .mvv_fotos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .mvv_fotos img{
+    width: 45%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .mvv_fotos img {
+    width: 48%;
+  }
+  .historia_foto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .historia_foto img {
+    width: 80%;
+    height: auto;
+
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+/* PROPOSTA  */
+.apresentacao_proposta {
+  padding: 20px;
+}
+
+.proposta_conteudo {
+  display: flex;
+  flex-direction: column;
+}
+
+/* título à esquerda + foto à direita */
+.proposta_topo {
+  display: flex;
+  justify-content: space-between; /* separa título à esquerda e imagem à direita */
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.proposta_conteudo_titulo {
+  color: #7d8c6e;
+  font-size: 4.0rem;
+  margin: 0;
+  margin-left: 150px ;
+  font-family: 'Fredoka', sans-serif;
+}
+.proposta_foto img {
+  width: 50px;
+  height: auto;
+  margin-right: 100px;
+}
+
+/* texto embaixo ocupando toda largura */
+.proposta_texto_sobre {
+  margin-top: 40px;
+  width: 100%;
+  font-size: 1.5rem;          /* aumenta um pouco o tamanho da fonte */
+  line-height: 1.8;           /* deixa o texto mais "respirado" */
+  color: #000000;                /* cor do texto mais elegante */
+  text-align: justify;        /* texto alinhado nas duas margens */
+  max-width: 1200px;           /* não deixa o texto ficar muito largo */
+  margin: 60px auto;             /* centraliza no meio da página */
+  padding: 50px;              /* espaço interno */
+  background: #f9f9f9;        /* fundo suave para destacar */
+  border-left: 7px solid #b37a22; /* barra colorida ao lado do texto */
+  border-radius: 8px;         /* cantos arredondados */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* sombra leve */
+  font-family: 'Fredoka', sans-serif ;
+  box-sizing: border-box;
+}
+
+
+.proposta_texto_sobre p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+@media (max-width: 1024px) {
+  .proposta_conteudo_titulo {
+    font-size: 3rem;
+    margin-left: 60px;
+  }
+
+  .proposta_foto img {
+    width: 90px;
+    margin-right: 50px;
+  }
+
+  .proposta_texto_sobre {
+    font-size: 1.3rem;
+    padding: 40px;
+    margin: 40px auto;
+  }
+}
+
+/* Celulares grandes (até 768px) */
+@media (max-width: 768px) {
+  .proposta_topo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .proposta_conteudo_titulo {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+  .proposta_foto img {
+    width: 80px;
+    margin: 20px 0;
+  }
+
+  .proposta_texto_sobre {
+    font-size: 1.1rem;
+    padding: 25px;
+    margin: 25px auto;
+  }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+  .proposta_conteudo_titulo {
+    font-size: 2rem;
+  }
+
+  .proposta_foto img {
+    width: 60px;
+  }
+
+  .proposta_texto_sobre {
+    font-size: 1rem;
+    padding: 20px;
+    margin: 20px auto;
+  }
+ .proposta_topo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+/* alimentacao e horarios  */
+.horario_alimentacao {
+  font-family: "Quicksand", sans-serif;
+  background-image: url('./fundo.jpeg');
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+.titulo-pagina {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2.8rem;
+  color: #b37a22;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 2px rgba(85,107,47,0.2);
+}
+
+/* Card principal */
+.card-principal {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px 50px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 950px;
+  margin: 0 auto 60px;
+}
+
+.card-principal h2 {
+  color: #b37a22;
+  font-family: "Quicksand", sans-serif ;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+.card-principal p {
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+}
+
+/* Cards menores */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 950px;
+  margin: 0 auto 80px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #b37a22;
+  font-family: "Quicksand", sans-serif;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Container geral */
+.container {
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CRECHE */
+body.pagina_creche {
+  font-family: "Quicksand", sans-serif;
+  background-image: url('./fundo.jpeg');
+  background-size: cover;
+  color: #4a3b27;
+  margin: 0;
+  padding: 0;
+}
+
+.creche_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 10%;
+  gap: 40px;
+  text-align: center;
+}
+
+.creche_texto {
+  flex: 1 1 500px;
+  max-width: 600px;
+  
+}
+.creche_texto p {
+  line-height: 1.9; 
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.creche_titulo {
+  font-family: "Quicksand", sans-serif;
+  font-size: 3.5rem;
+  color: #7a4a0c;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.creche_subtitulo {
+  font-family: "Quicksand", sans-serif;
+  font-size: 22px;
+  color: #889176;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.creche_texto p {
+  line-height: 1.7;
+  font-size: 17px;
+  margin-bottom: 16px;
+}
+
+.creche_fotos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.foto_circular {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid #e5e5e5;
+}
+
+.foto_circular img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.foto_circular.verde {
+  border-color: #a6b293;
+}
+
+.foto_circular.rosa {
+  border-color: #e6b2a7;
+}
+
+
+/* === ESTILO DA PÁGINA PRÉ-ESCOLA === */
+
+
+.pre_escola_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  gap: 40px;
+  
+}
+
+.pre_escola_texto {
+  flex: 1 1 500px;
+  max-width: 600px;
+}
+
+.pre_escola_titulo {
+  font-family: "Quicksand", sans-serif;
+  font-size: 60px;
+  color: #7a4a0c;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.pre_escola_subtitulo {
+  font-family: "Quicksand", sans-serif;
+  font-size: 22px;
+  color: #889176;
+  margin-bottom: 30px;
+}
+
+.pre_escola_texto p {
+  line-height: 1.8;
+  font-size: 18px;
+  margin-bottom: 18px;
+  color: #4a3b27;
+}
+
+.pre_escola_fotos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .pre_escola_container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+/* prinficonais capacitados  */
+
+
+
+body {
+  margin: 0;
+  
+  background-image: url(./fundo.jpeg);
+}
+
+
+
+.cabecalho_menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.cabecalho_link {
+  color: #3e3e3e;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.cabecalho_link:hover,
+.cabecalho_link.ativo {
+  color: black;
+}
+
+.profissionais {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 60px 8%;
+}
+
+.profissionais_imagens {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  flex: 1 1 45%;
+}
+
+.img_circular {
+  width: 300px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border: 6px solid transparent;
+}
+
+.img_circular.rosa { border-color: #e7b9b9; }
+.img_circular.amarela { border-color: #d6a845; }
+.img_circular.verde { border-color: #a3c6a1; }
+
+.profissionais_texto {
+  flex: 1 1 45%;
+  background: #d8e8d1;
+  padding: 40px 50px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  text-align: center;
+
+}
+
+.profissionais_texto h2 {
+  font-family: 'Fredoka', sans-serif;;
+  color: #5b3c1a;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.profissionais_texto p {
+  font-size: 1.2rem;
+  color: #1e4d1f;
+  font-weight: 500;
+  line-height: 1.6;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.logo_travessia {
+  width: 130px;
+  margin-top: 25px;
+}
+
+
+
+/* ====== RESPONSIVO ====== */
+@media (max-width: 900px) {
+  .profissionais {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profissionais_imagens {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .img_circular {
+    width: 200px;
+    height: 200px;
+  }
+
+  .profissionais_texto {
+    margin-top: 40px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* atividades  */
+
+.pagina_atividades {
+  padding: 60px 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.atividades_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1300px;
+  width: 100%;
+}
+
+/* imagens circulares */
+.atividades_imagens {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.atividades_imagens img.circulo {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  border: 5px solid white;
+}
+
+/* texto */
+.atividades_texto {
+  background-color: #c9d8a9;
+  padding: 40px 60px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  text-align: center;
+  min-width: 300px;
+  font-family: 'Fredoka', sans-serif;;
+}
+
+.titulo_atividades {
+  color: #7b511e;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.lista_atividades p {
+  font-size: 1.4rem;
+  line-height: 2;
+  font-weight: 600;
+  color: #1e4d1f;
+}
+
+/* rodapé */
+.rodape {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 40px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+  .atividades_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .atividades_texto {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .atividades_imagens img.circulo {
+    width: 220px;
+    height: 220px;
+  }
+
+  .titulo_atividades {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .atividades_imagens img.circulo {
+    width: 180px;
+    height: 180px;
+  }
+
+  .titulo_atividades {
+    font-size: 1.8rem;
+  }
+
+  .lista_atividades p {
+    font-size: 1.1rem;
+  }
+  .atividades_container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MATRICULAS */
+.pagina_matriculas {
+  display: flex;
+  justify-content: center;
+  padding: 60px 10%;
+}
+
+.matriculas_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Texto */
+.matriculas_texto {
+  flex: 1;
+  text-align: center;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  color: #7b511e;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.titulo_vagas {
+  font-size: 3rem;
+  font-family: 'Fredoka', sans-serif;
+  color: #7d8c6e;
+  text-shadow: 1px 1px 0px #b4c49a;
+  margin-bottom: 10px;
+}
+
+.titulo_matriculas {
+  font-size: 1.8rem;
+  background: white;
+  display: inline-block;
+  padding: 5px 20px;
+  color: #b37a22;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.info p {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+/* Imagem */
+.matriculas_imagem img {
+  width: 340px;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* Rodapé */
+.rodape {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 40px;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .matriculas_container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .matriculas_imagem img {
+    width: 80%;
+  }
+
+  .titulo_vagas {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .titulo_vagas {
+    font-size: 2rem;
+  }
+
+  .titulo_matriculas {
+    font-size: 1.4rem;
+    padding: 5px 15px;
+  }
+
+  .info p {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====== RODAPÉ ====== */
+.rodape {
+  text-align: center;
+  background: #e5e0da;
+  padding: 15px;
+  color: #3e3e3e;
+  font-weight: 500;
+}
+.cabecalho {
+  background-color: #e7e7e7;
+  padding: 20px 10%;
+}
