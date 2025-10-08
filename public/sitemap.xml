@@ -1,47 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://escola-travessia-site.vercel.app/</loc>
+    <lastmod>2025-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://escola-travessia-site.vercel.app/index.html</loc>
+    <lastmod>2025-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://escola-travessia-site.vercel.app/historia.html</loc>
+    <lastmod>2025-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://escola-travessia-site.vercel.app/propostas.html</loc>
+    <lastmod>2025-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://escola-travessia-site.vercel.app/atividades.html</loc>
+    <lastmod>2025-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://escola-travessia-site.vercel.app/creche.html</loc>
+    <lastmod>2025-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://escola-travessia-site.vercel.app/profissionais.html</loc>
+    <lastmod>2025-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://escola-travessia-site.vercel.app/matriculas.html</loc>
+    <lastmod>2025-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://escola-travessia-site.vercel.app/horarios.html</loc>
+    <lastmod>2025-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
